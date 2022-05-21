@@ -10,7 +10,7 @@
         width="40"
       />
     </div>
-    <div>Hedera Token Service Demo</div>
+    <div>VeriScribe</div>
 
     <v-spacer></v-spacer>
 

@@ -143,11 +143,11 @@ export async function tokenCreate(token) {
         isDeleted: false,
         treasury: issuerAccount
       };
-
+      
       // automatically associate, grant, etc... for marketplace
       tokenAssociate(token.tokenId, "Marketplace").then(() => {
         const marketAccountId = getAccountDetails("Marketplace").accountId;
-        notifySuccess("token association with marketplace successful");
+        notifySuccess("token association with Marketplace successful");
         if (token.kycKey) {
           const instruction = {
             tokenId: token.tokenId,
